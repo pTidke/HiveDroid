@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Startup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Product"
+            android:textColor="@color/white"
+            app:icon="@drawable/addd"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_common"
+            android:layout_marginTop="@dimen/dimen_common_medium"
+            android:padding="@dimen/dimen_common_very_small"
+            app:cornerRadius="@dimen/dimen_common"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="@dimen/dimen_common_small"
+            android:id="@+id/productsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/zero_margin_when_normal"
+            android:paddingEnd="@dimen/zero_margin_when_normal" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

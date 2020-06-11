@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Home"
+    android:backgroundTint="@color/bg">
+
+    <ImageView
+        android:id="@+id/imgPhotos"
+        android:layout_width="180dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ngo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mmedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:text="Donate NGO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPhotos" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mlight"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:text="Your vision does not require sight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="View Campaigns"
+        android:textColor="@color/amber_primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:padding="12sp"
+        app:strokeWidth="2sp"
+        app:icon="@drawable/go"
+        app:iconTint="@color/colorPrimary"
+        android:fontFamily="@font/mmedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="View Products"
+        android:textColor="@color/amber_primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:padding="12sp"
+        app:strokeWidth="2sp"
+        app:icon="@drawable/go"
+        app:iconTint="@color/colorPrimary"
+        android:fontFamily="@font/mmedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+    <ImageButton
+        android:id="@+id/btnPageNgo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ngob"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/btnPageStart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/startupb"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

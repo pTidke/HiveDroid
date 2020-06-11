@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="@dimen/dimen_common"
+        android:layout_marginBottom="100dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ti2"
+            android:layout_marginLeft="@dimen/dimen_common"
+            android:layout_marginRight="@dimen/dimen_common"
+            android:layout_marginTop="@dimen/dimen_common_small">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:drawableEnd="@drawable/ic_baseline_mail_24"
+                android:drawableTint="@color/colorAccent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_common"
+            android:layout_marginRight="@dimen/dimen_common"
+            android:layout_marginTop="@dimen/dimen_common"
+            android:id="@+id/ti3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:drawableEnd="@drawable/ic_baseline_lock_24"
+                android:layout_width="match_parent"
+                android:drawableTint="@color/colorAccent"
+                android:layout_height="60sp"
+                android:paddingStart="12dp"
+                android:hint="Enter your Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:minLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Login"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:textSize="24sp"
+            android:paddingTop="@dimen/dimen_common_very_small"
+            android:paddingBottom="@dimen/dimen_common_very_small"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
